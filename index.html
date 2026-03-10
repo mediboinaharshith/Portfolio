@@ -1,130 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <title>Mediboina Harshith — Frontend Developer</title>
+    <meta name="description"
+        content="Mediboina Harshith is a Frontend Developer specializing in building accessible, pixel-perfect, and performant web applications using modern technologies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="portfolio.css">
 </head>
+
 <body>
-    <div class="navbar">
-        <div id="logo">
-            <h3>Personal Portfolio</h3>
-        </div>
-        <div id="Menu">
-        <a href="#">Home</a>
-        <a href="#">Aboutme</a>
-        <a href="#">Skills</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-</div>
-</div>
-<div class="hero-section">
-    <div class="box1">
-      <div class="title">
-        <h1>Building Digital <br>
-            Experiences That <br> 
-            Matter.</h1>
-      </div>
-      <div class="info">
-        <p>I'm Mediboina Harshith, a Frontend Developer specialized in <br>
-          building accessible, pixel-perfect, and performant web <br>
-          applications using modern technologies.
-        </p>
-      </div>
-      <div class="buttons">
-        <button>View Work</button>
-        <button>Download CV</button>
-      </div>
-      </div>
-      <div class="profileinfo">   
-      <div class="selfimage">
-        <img src="grey_pic.jpg" alt="">
-      </div>
-      <div class="name">
-         <h2 style="color: bisque;">MEDIBOINA HARSHITH</h2>
-      </div>
-      </div>
-</div>
 
-  <div class="page2">
-      <div class="techstack">
-        <h1 style="color: white;">TECHSTACK</h1>
-      </div>
-      <div class="skills">
-        <div class="skill1">
-          <img src="html_pic.png" alt="">
-          <h2>Semantic & Responsive</h2>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-accent">&lt;</span>Harshith<span class="logo-accent">/&gt;</span>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
-        <div class="skill2">
-          <img src="css_pic.png" alt="">
-          <h2>Flexible and Stylish</h2>
-        </div>
-        <div class="skill3">
-          <img src="JS_pic.webp" alt="">
-          <h2>ES6+, TypeScript</h2>
-        </div>
-        <div class="skill4">
-          <img src="Reactjs_pic.png" alt="">
-          <h2>Next.js, Redux</h2>
-        </div>
-      </div>
-    </div>
-  <div class="page3">
-    <div class="div0">
-      <H1 style="color: white;">Featured Projects</H1>
-    </div>
-    <div class="div1">
-        <div class="p1">
-          <img src="e-commerse_dashboard.webp" alt="">
-          <h3>E-Commerce Dashboard</h3>
-          <p>A comprehensive analytics dashboard with real- <br>
-            time data visualization, dark mode support, and <br>
-            inventory management.</p>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-content" data-reveal="left">
+            <p class="hero-greeting">Hi, my name is</p>
+            <h1 class="hero-title">Mediboina Harshith</h1>
+            <h2 class="hero-subtitle">I build <span class="typed-text" id="typedText"></span><span
+                    class="cursor-blink">|</span></h2>
+            <p class="hero-description">
+                A Frontend Developer specialized in building accessible, pixel-perfect, and performant web applications
+                using modern technologies.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-eye"></i> View Work
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="10">0</span>+
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="2">0</span>+
+                    <span class="stat-label">Years Exp</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="5">0</span>+
+                    <span class="stat-label">Technologies</span>
+                </div>
+            </div>
         </div>
-        <div class="p2">
-          <img src="taskmaster_app.webp" alt="">
-          <h3>TaskMaster App</h3>
-          <p>A collaborative productivity tool featuring Kanban <br>
-            boards, drag-and-drop task management, and <br> 
-            team chat.</p>
+        <div class="hero-image" data-reveal="right">
+            <div class="image-wrapper">
+                <div class="image-border"></div>
+                <img src="grey_pic.jpg" alt="Mediboina Harshith">
+            </div>
         </div>
-        <div class="p3">
-          <img src="crypto_portfolio.png" alt="">
-          <h3>Crypto Portfolio Tracker</h3>
-          <p>Real-time cryptocurrency tracker using <br> 
-            CoinGecko API. Features price alerts and <br> 
-            historical data charting.</p>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="skills-section" id="skills">
+        <div class="section-header" data-reveal="up">
+            <p class="section-tag"><i class="fas fa-code"></i> What I Work With</p>
+            <h2 class="section-title">Tech Stack</h2>
         </div>
-    </div>
-  </div> 
-  <div class="page4">
-    <div class="commentbox">
-      <h2>Get In Touch</h2>
-      <p>Have a project in mind or want to say hi? I'll get back to you within 24 hours.</p>
-       <div class="nameandemail">
-        <div class="namein">
-          <p>Name</p>
-          <input type="text" placeholder="john doe">
+        <div class="skills-grid">
+            <div class="skill-card" data-reveal="up">
+                <div class="skill-icon-wrap">
+                    <img src="html_pic.png" alt="HTML5">
+                </div>
+                <h3>HTML5</h3>
+                <p>Semantic & Responsive</p>
+                <div class="skill-level">
+                    <div class="skill-bar" style="--level: 95%"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-reveal="up">
+                <div class="skill-icon-wrap">
+                    <img src="CSS_pic.png" alt="CSS3">
+                </div>
+                <h3>CSS3</h3>
+                <p>Flexible & Stylish</p>
+                <div class="skill-level">
+                    <div class="skill-bar" style="--level: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-reveal="up">
+                <div class="skill-icon-wrap">
+                    <img src="JS_pic.webp" alt="JavaScript">
+                </div>
+                <h3>JavaScript</h3>
+                <p>ES6+, TypeScript</p>
+                <div class="skill-level">
+                    <div class="skill-bar" style="--level: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-reveal="up">
+                <div class="skill-icon-wrap">
+                    <img src="Reactjs_pic.png" alt="React.js">
+                </div>
+                <h3>React.js</h3>
+                <p>Next.js, Redux</p>
+                <div class="skill-level">
+                    <div class="skill-bar" style="--level: 80%"></div>
+                </div>
+            </div>
         </div>
-        <div class="emailin">
-          <p>Email</p>
-          <input type="email" placeholder="john@example.com">
-        </div>  
-    </div>
-    <div class="messagebox">
-    <p>Message</p>
-    <textarea placeholder="Tell me about your project..."></textarea>
-    <div class="sendbutton">
-      <button>Send Message</button>
-  </div>
-  </div>
-  </div>
-  
-  </div>
-  <div class="footor">
-    <h2 >© 2024 Mediboina Harshith. All rights reserved.</h2>
-  </div>
-  </body>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="section-header" data-reveal="up">
+            <p class="section-tag"><i class="fas fa-rocket"></i> What I've Built</p>
+            <h2 class="section-title">Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card" data-reveal="up">
+                <div class="project-image">
+                    <img src="e-commerse_dashboard.webp" alt="E-Commerce Dashboard">
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Chart.js</span>
+                        <span>Node.js</span>
+                    </div>
+                    <h3>E-Commerce Dashboard</h3>
+                    <p>A comprehensive analytics dashboard with real-time data visualization, dark mode support, and
+                        inventory management.</p>
+                </div>
+            </div>
+            <div class="project-card" data-reveal="up">
+                <div class="project-image">
+                    <img src="taskmaster_app.webp" alt="TaskMaster App">
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Firebase</span>
+                        <span>DnD</span>
+                    </div>
+                    <h3>TaskMaster App</h3>
+                    <p>A collaborative productivity tool featuring Kanban boards, drag-and-drop task management, and
+                        team chat.</p>
+                </div>
+            </div>
+            <div class="project-card" data-reveal="up">
+                <div class="project-image">
+                    <img src="crypto_portfolio.png" alt="Crypto Portfolio Tracker">
+                    <div class="project-overlay">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>API</span>
+                        <span>Chart.js</span>
+                    </div>
+                    <h3>Crypto Portfolio Tracker</h3>
+                    <p>Real-time cryptocurrency tracker using CoinGecko API. Features price alerts and historical data
+                        charting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-header" data-reveal="up">
+            <p class="section-tag"><i class="fas fa-envelope"></i> Let's Connect</p>
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have a project in mind or want to say hi? I'll get back to you within 24 hours.
+            </p>
+        </div>
+        <form class="contact-form" id="contactForm" data-reveal="up">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nameInput">Name</label>
+                    <input type="text" id="nameInput" placeholder="John Doe" required>
+                    <span class="form-error" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="emailInput">Email</label>
+                    <input type="email" id="emailInput" placeholder="john@example.com" required>
+                    <span class="form-error" id="emailError"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="messageInput">Message</label>
+                <textarea id="messageInput" placeholder="Tell me about your project..." required></textarea>
+                <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-success"><i class="fas fa-check"></i> Sent!</span>
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-socials">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="footer-text">Designed & Built by <span class="logo-accent">Mediboina Harshith</span></p>
+            <p class="footer-copy">&copy; 2024 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+
 </html>
